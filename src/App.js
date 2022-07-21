@@ -33,10 +33,10 @@ export default function Weather(props) {
   }
 
   function search() {
-    const apiKey = "845505d1e742045f912e726d31d8655f"
-    let apiUrl = ` https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiKey = "b31b93acf82454d84af6cbf3bc07f3a3"
+   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`;
     axios.get(apiUrl).then(handleResponse);
-   
+  }
 
   if (weatherData.ready) {
     return (
@@ -66,7 +66,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Hello!!.";
+    return "Hello!!...";
   }
-
-  }}
+}

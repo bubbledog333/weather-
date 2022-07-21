@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon.js";
 import WeatherTemp from "./WeatherTemp.js"
